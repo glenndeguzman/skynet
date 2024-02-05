@@ -27,6 +27,8 @@ app.UseSwaggerUI();
 
 app.UseStaticFiles();
 
+app.UseCors("CorsPolicy");  // REfer to settings in ApplicationServicesExtensions.cs
+
 app.UseAuthorization();
 
 app.MapControllers();
